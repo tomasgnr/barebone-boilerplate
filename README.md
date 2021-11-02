@@ -2,7 +2,16 @@
 
 Barebone Node, Express &amp; React boilerplate using Webpack &amp; Babel
 
-## Project setup
+### Env Variables
+
+Create a .env file in then root and add the following
+
+```
+NODE_ENV = development
+PORT = 5000
+```
+
+### Install Dependencies
 
 ```
 yarn install

@@ -1,17 +1,12 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const path = require('path')
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: './src/index.html',
-  filename: './index.html',
-})
-
 module.exports = {
-  entry: './src/index.js',
+  entry: './client/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+    path: __dirname,
+    filename: './public/bundle.js',
   },
-  plugins: [htmlPlugin],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   module: {
     rules: [
       {
